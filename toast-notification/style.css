@@ -34,11 +34,7 @@ body {
   font-weight: 500;
   position: relative;
 }
-.topleft{
-    position: fixed;
-    top: 20px;
-    left: 20px; 
-}
+
 
 
 /* .notify::before {

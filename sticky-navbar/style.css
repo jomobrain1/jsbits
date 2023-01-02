@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav {
+  position: fixed;
+  z-index: 5000;
+  width: 100%;
+  height: 80px;
+  background-color: #48d;
+  padding: 10px 5px;
+  top: 0;
+  left: 0;
+  transition: all 0.7s ease-in-out ;
+  
+}
+.sticky{
+ 
+   background-color:rgb(8, 64, 82);
+  /* height: 100px; */
+   padding: 20px 5px;
+ }
+
+.container {
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 50px;
+}
+span {
+  display: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 25px;
+  z-index: 10;
+}
+span:hover {
+  cursor: pointer;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ul {
+  display: inline-flex;
+}
+ul li {
+  margin-left: 20px;
+  padding: 10px 5px;
+}
+ul li a {
+  color: #fff;
+}
+.logo {
+  font-size: 28px;
+  color: #fff;
+}
+.cancel {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+.banner {
+  position: relative;
+  height: 100vh;
+  background: url("./images/bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 800px) {
+  span {
+    display: block;
+  }
+  nav ul {
+    z-index: 1000;
+    height: 400px;
+    display: block;
+    width: 100%;
+    position: fixed;
+    left: -100%;
+    max-width: 800px;
+    padding: 80px 0;
+    background: steelblue;
+    text-align: center;
+    margin-top: 70px;
+    transition: left 0.8s ease-in;
+  }
+  nav ul.active {
+    left: 0;
+  }
+}
+
+.banner .container {
+  z-index: 15;
+
+  text-align: center;
+}
+
+.banner .container h1 {
+  color: #fff;
+  font-weight: 700;
+  margin: 15px 3px;
+  font-size: 32px;
+}
+
+.banner .container p {
+  color: #f1f1f1;
+  margin-bottom: 35px;
+}
+
+.banner .container a {
+  background-color: #48d;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 1px solid blue;
+}
+
+.scroll-h1{
+  font-size: 30px;
+  padding: 20px 10px;
+}
+
+p{
+  text-align: justify;
+}
+
+footer{
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+

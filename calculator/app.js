@@ -13,7 +13,8 @@ btns.forEach(btn=>{
 
 equal.onclick=()=>{
     try {
-        console.log( eval(output.innerText));  
+        console.log( eval(output.innerText)); 
+        output.innerText=eval(output.innerText) 
     } catch (error) {
         if(error){
             output.innerText="! Error !"  
@@ -23,7 +24,6 @@ equal.onclick=()=>{
     }
  
 }
-del.onclick=()=>{
-    
+del.onclick=()=>{    
     output.innerText= output.innerText.slice(0,-1)
 }

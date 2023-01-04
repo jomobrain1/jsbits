@@ -29,3 +29,19 @@ nav .container {
     font-size: 25px;
     font-weight: 500;
 }
+.links ul{
+    display: inline-flex;
+}
+.links ul li{
+    margin-left: 20px;
+}
+.links .drop-down{
+   
+    background: teal;
+    width: max-content;
+    padding: 10px 10px 15px 5px;
+    line-height: 25px;
+    position: absolute;
+    top: 45px;
+    display: block;
+}

@@ -16,12 +16,16 @@
 
         <section class="links">
           <ul>
+                      
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
             <li>
-              <a href="#">Drop down</a>
+              <input type="checkbox"  id="showDrop">
+              <a href="#" class="desktop">Drop down</a>
+              <label for="showDrop" class="mobile">Drop down</label>
               <ul class="drop-down">
+                
                 <li><a href="#">Javascript</a></li>
                 <li><a href="#">Vue</a></li>
                 <li><a href="#">React</a></li>
@@ -30,7 +34,9 @@
             </li>
             <li><a href="#">Blog</a></li>
             <li>
-              <a href="#" class="mega">Mega Menu</a>
+              <a href="#" class="mega desktop">Mega Menu</a>
+              <input type="checkbox"  id="showMega">
+              <label for="showMega" class="mobile">Mega menu</label>
               <ul class="mega-menu">
                 <div class="content">
                   <section class="row">
@@ -66,7 +72,15 @@
             </li>
           </ul>
         </section>
+     
+        
+        <div for="slide" class="mobile menu" id="slide" >
+          &#9776;
+        </div>
+        <!-- <input type="checkbox"  id="slide"> -->
       </div>
     </nav>
+
+    <script src="./app.js"></script>
   </body>
 </html>

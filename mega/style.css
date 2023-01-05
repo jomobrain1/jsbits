@@ -17,7 +17,7 @@
 }
 nav {
   background: steelblue;
-  height: 130px;
+  height: 100px;
 }
 nav .container {
   display: flex;
@@ -33,15 +33,105 @@ nav .container {
     display: inline-flex;
 }
 .links ul li{
-    margin-left: 20px;
+    margin-left: 15px;
+}
+.links ul li a{
+  padding: 5px 10px;
 }
 .links .drop-down{
    
-    background: teal;
-    width: max-content;
-    padding: 10px 10px 15px 5px;
+    background: rebeccapurple;
+    width: min-content;  
     line-height: 25px;
-    position: absolute;
-    top: 45px;
+    position: absolute;  
+    top: 42px;
+    /* display: none; */
+    transition: all 0.8s ease;
+    
+}
+.links .drop-down li{
+  margin: 5px 10px;
+}
+.links ul li:hover  .drop-down{
+  background-color: red;
+  display: block;
+}
+.links ul li a{
+  color: #fff;
+}
+
+.links .mega-menu{
+  /* background: red; */
+  position: absolute;
+  top: 50px;
+  width:100%;
+  left: 0;
+  padding: 20px 30px;
+  /* display: none; */
+ 
+}
+.mega-menu .content{
+  background-color: black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 40px;
+  
+}
+.links ul li:hover  .mega-menu{
+  display: block;
+}
+.row{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+.row li{
+  margin: 3px 3px;
+}
+.row li a{
+  padding: 10px 3px;
+  border-radius: 10px;
+}
+.row li a:hover{
+  background-color: #242526;
+}
+.row>a{ 
+  font-size: 24px;  
+}
+
+
+@media (max-width:970px){
+  .drop-down{
     display: block;
+  }
+  .links .mega-menu{
+    position: static;
+    margin-left: -20px;
+    
+
+  }
+  .mega-menu .content{
+  flex-direction: column;
+  align-items: baseline;
+  padding: 0;
+  
+  }
+  nav{
+
+    height: 100%;
+  }
+  nav .container{
+    display: block;
+    height: 100%;
+  }
+  .links ul{
+    display: block;
+}
+.links .drop-down{
+  position: static;
+}
+
 }

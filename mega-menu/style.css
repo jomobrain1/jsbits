@@ -155,10 +155,7 @@ input[type="checkbox"] {
     max-height: 0;
     overflow: hidden;
   }
-  .mega-menu .content {
-    margin: 0;
-    padding: 2px 0px 2px 10px;
-  }
+  
   #showMega:checked ~ .mega-menu {
     display: block;
     max-height: 100%;
@@ -166,8 +163,13 @@ input[type="checkbox"] {
   }
 
   .mega-menu .content {
-    flex-direction: column;
-    align-items: baseline;
+    display: block;
+    height: 400px;
+    overflow-y: scroll;
+    margin-left: -50px;
+    
+    
+    
   }
   nav {
     height: 100%;
@@ -195,4 +197,12 @@ input[type="checkbox"] {
     font-size: 30px;
   }
  
+}
+
+.main{
+  background-color: #000;
+  color: #fff;
+  padding: 30px 20px;
+  margin-top: 80px;
+  
 }

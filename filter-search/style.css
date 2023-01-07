@@ -1,0 +1,109 @@
+/* Google Fonts
+ font-family: 'DynaPuff', cursive;
+font-family: 'Roboto', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@600&family=Roboto:ital@1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DynaPuff", cursive;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1250px;
+  padding: 10 30px;
+  outline: none;
+  padding-bottom: 150px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 300px;
+  font-size: 45px;
+  color: dodgerblue;
+}
+
+.code {
+  padding: 20px 20px;
+  background: #1e293b;
+}
+
+.searchBox {
+  position: relative;
+  padding: 10px 40px;
+  background: #e5e7eb;
+}
+.searchIcon {
+  position: absolute;
+  top: 40px;
+  font-size: 30px;
+}
+
+#search {
+  border: none;
+  width: 100%;
+  background: #e5e7eb;
+  height: 90px;
+  padding: 5px 50px;
+  font-size: 29px;
+}
+#search:focus {
+  border: none;
+  outline: none;
+}
+.card {
+  padding: 10px 15px;
+}
+.card-title h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.card-text {
+  padding: 10px 15px;
+  line-height: 24px;
+  background: #d6e8ec;
+}
+.card-image {
+  position: relative;
+}
+img {
+  min-width: 100%;
+  min-height: 100%;
+  height: 330px;
+}
+.hover-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  z-index: 5;
+  height: 100%;
+  background-color: #242526;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+.hover-text:hover {
+  opacity: 1;
+}
+
+.is-hidden {
+  display: none;
+}
+.flex-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.flex-box > * {
+  flex-basis: 30%;
+  min-width: 15rem;
+}

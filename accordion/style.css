@@ -44,26 +44,41 @@
   text-align: center;
 }
 
-
-
-.accordion-body{
+.accordion-body {
   max-height: 0;
-  overflow: hidden;  
-  text-align: justify; 
+  overflow: hidden;
+  text-align: justify;
   background-color: #d6e8ec;
-
 }
-#accordion-cb,#accordion-cb2{
+
+input[type="checkbox"] {
   display: none;
 }
 
-#accordion-cb:checked ~ .accordion-body{
+#accordion-cb:checked ~ .accordion-body,
+#accordion-cb2:checked ~ .accordion-body,
+#accordion-cb3:checked ~ .accordion-body,
+#accordion-cb4:checked ~ .accordion-body ,
+#accordion-cb5:checked ~ .accordion-body ,
+#accordion-cb6:checked ~ .accordion-body ,
+#accordion-cb7:checked ~ .accordion-body 
+
+{
   /* display: none; */
   max-height: 100%;
   padding: 10px 15px;
 }
-#accordion-cb2:checked ~ .accordion-body{
-  /* display: none; */
-  max-height: 100%;
-  padding: 10px 15px;
+
+
+
+.plus{
+  color: slateblue;
+  font-weight: 600;
+  font-size: 20px;
+  background: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
 }

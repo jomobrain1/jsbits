@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+
+.container {
+  padding: 10px 30px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.accordion {
+  max-width: 900px;
+  /* border: 1px solid blue; */
+  padding: 3px 10px;
+}
+.accordion-title {
+  background: steelblue;
+  color: #fff;
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordion-link {
+  color: steelblue;
+  background: #fff;
+  padding: 3px 10px;
+  width: 100px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+.accordion-body{
+  max-height: 0;
+  overflow: hidden;  
+  text-align: justify; 
+  background-color: #d6e8ec;
+
+}
+#accordion-cb,#accordion-cb2{
+  display: none;
+}
+
+#accordion-cb:checked ~ .accordion-body{
+  /* display: none; */
+  max-height: 100%;
+  padding: 10px 15px;
+}
+#accordion-cb2:checked ~ .accordion-body{
+  /* display: none; */
+  max-height: 100%;
+  padding: 10px 15px;
+}

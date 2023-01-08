@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Product Details</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="flex-box">
+        <section class="image-box">
+          <div class="big-image">
+            <img src="./images/vue.png" alt="" class="bigImage" />
+          </div>
+          <section class="small-images">
+            <div class="small-image">
+              <img
+                src="./images/code.jpg"
+                onclick="changeImage(this.src)"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="small-image">
+              <img
+                src="./images/lara6.png"
+                onclick="changeImage(this.src)"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="small-image">
+              <img
+                src="./images/flutter.jpg"
+                onclick="changeImage(this.src)"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="small-image">
+              <img
+                src="./images/lara10.jpg"
+                onclick="changeImage(this.src)"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="small-image">
+              <img
+                src="./images/vue1.jpg"
+                onclick="changeImage(this.src)"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </section>
+        </section>
+        <section class="product-content">
+          <h1>This is The Heading</h1>
+          <div class="ratings">
+            <span> &#9733; </span>
+            <span> &#9733; </span>
+            <span> &#9733; </span>
+            <span> &#9733; </span>
+            <span> &#9733; </span>
+          </div>
+          <div class="price">
+            $400
+          </div>
+          <div class="size">
+            Size:
+            <span>M</span>
+            <span>L</span>
+            <span>XL</span>
+            <span>XXL</span>
+          </div>
+          <div class="quantity">
+            Quantity:
+
+            <span>
+              <input
+                placeholder="select"
+                value="1"
+                type="number"
+                max="10"
+                min="1"
+              />
+            </span>
+          </div>
+          <div class="buy-btns">
+            <button class="add-cart">Add to cart</button>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 10px 30px;
+}
+
+.flex-box{
+    width: 100%;
+    height: 100vh;
+    
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 15px;
+
+}
+
+.image-box,.product-content{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.product-content{
+
+    align-items: flex-start;
+
+    line-height: 35px;
+  
+}
+.ratings{
+    font-size: 24px;
+    color: orange;
+}
+.ratings:hover{
+    font-size: orangered;
+    cursor: pointer;
+}
+.product-content h1{
+    margin: 10px 3px;
+    font-size: 26px;
+}
+.size span{
+    border: 1.5px solid chocolate;
+    padding: 2px 10px;
+    margin: 5px 10px;
+    transition:all 0.4s ease-in;
+}
+.size span:hover{
+    cursor: pointer;
+    
+    color: #fff;
+    background: chocolate;
+}
+.quantity{
+    margin: 10px 3px;
+}
+.quantity input{
+ text-align: center;
+ color: black;
+ font-weight: 500;
+}
+.buy-btns{
+    display: flex;
+    justify-content: space-between;
+}
+.buy-btns button{
+    padding: 5px 10px;
+    /* margin: 1px 20px; */
+}
+.buy-btns button:hover{
+    cursor: pointer;
+}
+.add-cart,.buy-btn{
+    color: #fff;
+    border: transparent;
+    background-color: orangered;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.buy-btn{
+   background-color: dodgerblue;
+}
+
+.big-image{
+    width: 300px;
+    height: 360px;
+}
+
+.small-images{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding: 20px 14px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+.small-images > *{
+ flex-basis: 15%;
+ max-width: 60px;
+}
+.small-image{
+    width: 60px;
+    border: 1px solid black;
+    padding: 3px 4px;
+}
+.small-image:hover{
+    cursor: pointer;
+}
+
+@media (max-width:900px){
+    .flex-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .size span{
+        border: 1.5px solid chocolate;
+        padding: 2px 8px;
+        margin: 5px 2px;
+        transition:all 0.4s ease-in;
+    }
+}

@@ -14,6 +14,8 @@
     margin: 0 auto;
     padding: 10px 30px;
     max-width: 1250px;
+    display: grid;
+    place-content: center;
 }
 
 .carousel{
@@ -25,6 +27,12 @@
 
     
 
+}
+button{
+    width: 130px;
+    border: 1px solid darkcyan;
+    color: #fff;
+    background: dodgerblue;
 }
 
 #image-box{
@@ -41,5 +49,13 @@ img{
 .carousel-btns{
     width: 700px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 5px;
 }
+
+.hide{
+    visibility: hidden;
+    opacity: 0;
+}
+

@@ -1,49 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.6.0/styles/monokai.css"> -->
+    <link rel="stylesheet" href="style.css" />
     <title>Html-Compiler</title>
-</head>
-<body>
-    <section class="container">
-   
-        <textarea placeholder="Enter HTML code"  id="html-code" cols="30" rows="10">
-           
-           <h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fuga voluptatum expedita inventore quos, corrupti veritatis, deserunt dolore vero reiciendis eum voluptate quasi animi minima assumenda exercitationem molestias, perferendis iusto!
-           </h1>
-        </textarea>
-        <div>
-            <textarea placeholder="css" id="css-code" cols="30" rows="10">
+  </head>
+  <body>
+    <div class="container">
+      <section class="main-code">
+        <div class="btns">
+          <button id="compile-btn">compile</button>
+         
+          <section class="links">
+            <a href="#html" class="html-link">html</a>
+            <a href="#css" class="css-link">css</a>
+            <a href="#js" class="js-link">js</a>
+          </section>
+        </div>
 
-                
-h1{
-    color: red;
-}
+        <div class="codes-box">
+          <div class="html-box" id="html">
+            <textarea
+              placeholder="html"
+              id="html-code"
+              class="code increase-width"
+              spellcheck="false"
+            >
+            <h1>jomobrain1</h1>
             </textarea>
+            <button class="html-btn floatbtn">html</button>
+
+            <section class="right-html">
+              <button class="expand-html">&#8596;</button>
+              <button class="eye-html">&#128065;</button>
+            </section>
+          </div>
+          <div class="css-box hd">
+            <textarea spellcheck="false" placeholder="css" id="css-code" class="code">
+                h1{
+                    color: blue;
+                    text-align:center;
+                }    
+            </textarea>
+            <button class="css-btn floatbtn">css</button>
+            <section class="right-css">
+              <button class="expand-css">&#8596;</button>
+              <button class="eye-css">&#128065;</button>
+            </section>
+          </div>
+          <div class="js-box hd">
+            <textarea spellcheck="false" placeholder="js" id="js-code" class="code"> </textarea>
+            <button class="js-btn floatbtn">js</button>
+            <section class="right-js">
+              <button class="expand-js">&#8596;</button>
+              <button class="eye-js">&#128065;</button>
+            </section>
+          </div>
         </div>
+      </section>
+ 
+      <section>
+        <iframe id="output"></iframe>
+      </section>
+      
+    </div>
 
-        <textarea placeholder="js" id="js-code" cols="30" rows="10">
-            alert('jomo')
-        </textarea>
-
-        <button id="compile-btn">compile</button>
-
-        <div id="output">
-
-        </div>
-
-    </section>
-
-    <style id="style">
-
-    </style>
-    
-     <script id="js">
-
-     </script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>  -->
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>

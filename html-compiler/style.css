@@ -1,21 +1,145 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-*{
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style-type: none;
-    text-decoration: none;
-    outline: none;
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  outline: none;
+}
+.container {
+  margin: 0 auto;
+  padding: 10px 15px;
+  max-width: 1300px;
+}
 
+#output {
+  min-width: 100%;
+  height: 100vh;
+    resize: both;
 }
-.container{
-    margin:0 auto;
-    padding: 10px 30px;
-    max-width: 1200px;
+.btns {
+  will-change: 100%;
+  display: flex;
+  justify-content: center;
+}
+.code{
+    word-wrap: break-word;
 }
 
-h1{
-    color: red;
+
+
+.codes-box {
+  width: 100%;
+  height: 100vh;
+  padding: 20px 30px;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
 }
+
+.codes-box > * {
+  flex-basis: 30%;
+  min-width: 15rem;
+}
+.code {
+  width: 100%;
+  height: 500px;
+  background: #242526;
+  resize: none;
+  color: orange;
+  font-weight: 400;
+  word-wrap: break-word;
+  padding: 50px 15px;
+  overflow: scroll;
+}
+.code::placeholder {
+  color: #f1f1f1;
+}
+.codess{
+    white-space: pre;
+}
+.float-btn {
+  width: 8em;
+}
+.html-box,
+.css-box,
+.js-box {
+  position: relative;
+}
+.html-btn,
+.css-btn,
+.js-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.right-html,
+.right-css,
+.right-js {
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.min-width {
+  min-width: 50%;
+}
+.max-width {
+  min-width: 100%;
+}
+.hide {
+  display: none;
+}
+.div{
+    
+    width: 500px;
+    height: 400px;
+    resize: vertical;
+    background: blue;
+}
+/* .disappear{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+} */
+
+@media (min-width: 1000px){
+ .links{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+ }
+}
+@media (max-width: 1000px) {
+  .codes-box {
+    width: 100%;
+    height: 100vh;
+    padding: 20px 30px;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .codes-box > * {
+    flex-basis: 100%;
+    min-width: 100%;
+    /* margin: 3px 300px; */
+  }
+  .right-html,
+  .right-css,
+  .right-js {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .hd {
+    display: none;
+  }
+}
+
+
+

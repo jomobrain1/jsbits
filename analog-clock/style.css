@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body{
+  background-color: #000;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 30px;
+  text-align: center;
+}
+#analog {
+  position: relative;
+  background: #f2f2f2;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px solid #000;
+  padding: 10px;
+}
+#hr {
+  position: absolute;
+  background: black;
+  border-radius: 10px;
+  transform-origin: bottom;
+  height: 25%;
+  top: 25%;
+  left: 48.85%;
+  opacity: 0.8;
+  width: 2%;
+}
+#min {
+  position: absolute;
+  background: black;
+  border-radius: 10px;
+  transform-origin: bottom;
+  left: 48.9%;
+  opacity: 0.8;
+  width: 1.6%;
+  height: 32%;
+  top: 18%;
+}
+#sec {
+  position: absolute;
+  background: tomato;
+  border-radius: 10px;
+  transform-origin: bottom;
+  width: 1%;
+  height: 36%;
+  top: 14%;
+  left: 50%;
+  opacity: 0.8;
+}
+
+#twelf {
+  position: absolute;
+  top: 0;
+  right: 50%;
+}
+
+.six {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+}
+
+.three {
+  position: absolute;
+  bottom: 50%;
+  left: 5px;
+}
+
+.nine {
+  position: absolute;
+  bottom: 50%;
+  right: 5px;
+}
+
+.date{
+    font-size: 20px;
+    color: #17D4FE;
+    font-weight: 700;
+}
+.time{
+  color: #17D4FE;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  font-size: 30px;
+  font-family: Orbitron;
+  
+}

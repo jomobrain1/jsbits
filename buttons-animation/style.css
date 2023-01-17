@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #d6e8ec;
+}
+
+.container {
+  margin: 5% auto;
+  padding: 10px 30px;
+  max-width: 1250px;
+}
+h1 {
+  text-align: center;
+}
+button {
+  width: 10rem;
+  height: 2rem;
+  border: 1px solid #2456;
+  margin: 10px 15px;
+}
+button:hover {
+  cursor: pointer;
+}
+.btn1 {
+  background: transparent;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.btn1::before {
+  content: " ";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background: #40e0d0;
+  z-index: -1;
+  width: 100%;
+  text-align: center;
+  transition: height 0.9s ease;
+}
+
+.btn1:hover::before {
+  height: 90%;
+}
+.btn1:hover {
+  color: #fff;
+}
+
+.btn2 {
+  background: transparent;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.btn2::before {
+  content: " ";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background: steelblue;
+  z-index: -1;
+  width: 0;
+  text-align: center;
+  height: 100%;
+  transition: width 0.9s ease;
+}
+
+.btn2:hover::before {
+  width: 90%;
+}
+.btn2:hover {
+  color: #fff;
+  border: 1px solid #48d;
+}
+
+.layer {
+  width: 7rem;
+  height: 7rem;
+  /* border: 1px solid #000; */
+  position: relative;
+}
+
+.ripple {
+  color: #fff;
+  background-color: royalblue;
+  position: relative;
+  overflow: hidden;
+}
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  animation: scaleX 1.4s ease;
+  transform: scale(0);
+  border-radius: 10%;
+}
+
+@keyframes scaleX {
+  to {
+    transform: scale(3);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.fadebg{
+    border: none;
+    border: none;
+    color: #000;
+    background-color: #f4f4f4;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.fadebg:hover {
+    background-color: #3e8e41;
+    color: white;
+  }
+
+  .button-2 {
+    color: #fff;
+    border: 3px solid #c266d3;
+    background-image: -webkit-linear-gradient(30deg, #c266d3 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #c266d3 50%, transparent 50%);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    
+    transition: all 300ms ease-in-out;
+  }
+  .button-2:hover {
+    background-position: 100%;
+    color: #c266d3;
+  }
+
+  .pulse{
+   background: transparent;
+   color: #48d;
+   font-weight: 500;
+   border: 3px solid steelblue;
+
+  }
+  .pulse:hover{
+    animation: pulse 2.3s ease-in-out infinite 0.2s;
+  }
+
+  @keyframes pulse {
+    0%{
+        transform: scale(1);
+    }
+    80%{
+        transform: scale(0.9);  
+    }
+    100%{
+        transform: scale(1);  
+    }
+  }
+
+ 

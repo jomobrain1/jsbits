@@ -26,3 +26,5 @@
 | 19  | [Buttons Animation](https://github.com/jomobrain1/jsbits/tree/main/buttons-animation)                                     | [Live Demo](https://jsbits-buttons-animation.netlify.app/)                   |
 | 20  | [Analog Clock](https://github.com/jomobrain1/jsbits/tree/main/analog-clock)                   | [Live Demo](https://jsbits-clock.netlify.app/)          |
 | 21  | [Auto Text](https://github.com/jomobrain1/jsbits/tree/main/auto-text)                                     | [Live Demo](https://jsbits-autotext.netlify.app/)                   |
+| 22  | [Auto Text](https://github.com/jomobrain1/jsbits/tree/main/animated-cube)                                     | [Live Demo](https://jsbits-animated-card.netlify.app/)                   |
+

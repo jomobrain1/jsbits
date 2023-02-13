@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  resize: none;
+
+}
+body{
+    background: #009578;
+}
+.container {
+  margin: auto;
+  padding: 10px 30px;
+  max-width: 1100px;
+}
+.notes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+.notes>*{
+    flex-basis: 30%;
+    min-width: 15rem;
+}
+
+textarea{
+    border: transparent;
+    height: 200px;
+    padding: 20px 15px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px #f3f3;
+}
+.add-note{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    width: 10rem;
+    height: 2rem;
+    border: 2px solid steelblue;
+}

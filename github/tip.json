@@ -1,0 +1,44 @@
+[
+    {
+        "id":1,
+        "tip":"git conflict",
+        "why":" A conflict arises when two separate branches have made edits to the same line in a file, or when a file has been deleted in one branch but edited in the other ",
+        "solution":"add to staging with (git add .) then git commit without the -m flag after removing the conflict comment. While in the Vim editor type [:wq] "
+    },
+    {
+        "id":2,
+        "tip":"When you make any change in any branch ensure you stage the changes (git add .) then commit them (git commit -m 'comment')",
+        "why":"",
+        "solution":""
+    },
+    {
+        "id":3,
+        "tip":"When Vim opens",
+        "why":"",
+        "solution":"type [:wq]"
+    },
+    {
+        "id":4,
+        "tip":"Dont merge a branch to the master branch if you want the branches to appear in github",
+        "why":"",
+        "solution":""
+    },
+    {
+        "id":5,
+        "tip":"origin means the url connected to i.e it's replacible with url/used instead of typing the long url",
+        "why":"",
+        "solution":""
+    },
+    {
+        "id":6,
+        "tip":"pushing a specific branch while in the branch",
+        "why":"",
+        "solution":"1.git add . \b 2. git commit -m 'commit message ' \b 3.git push --set-upstream origin non-master-branchName "
+    },
+    {
+        "id":7,
+        "tip":"Ensure you pull the code while in master branch b4 making a new branch locally",
+        "why":"To avoid conflicts",
+        "solution":"git pull origin main"
+    }
+]

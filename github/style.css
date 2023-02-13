@@ -1,0 +1,226 @@
+/* Google Fonts
+ font-family: 'DynaPuff', cursive;
+font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@600&family=Roboto:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DynaPuff', cursive;
+}
+img{
+   max-width: 100%;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1250px;
+    padding: 10 30px;
+    outline: none;
+    padding-bottom: 150px;
+}
+
+h1{
+    text-align: center;
+    font-size: 300px;
+    font-size: 45px;
+    color: dodgerblue;
+    
+}
+.link{
+  text-decoration: none;
+  width: 10rem;
+  height: 2rem;
+  background: #1E293B;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  color: #fff;
+  padding: 3px 15px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.links{
+    display: grid;
+    place-content: center;
+}
+
+#main{
+    border: 3px solid #6699;
+    margin-top: 50px;
+    padding: 50px 19px;
+    padding-bottom: -20px;
+    background: #ecf0f3;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: -3px -3px 3px #ceced1,3px 3px 5px #ceced1;
+}
+#cd{
+   color: orangered;
+}
+.title_comment{
+    color: green;
+}
+.codes{
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    place-content: center;
+    margin: 20px 3px;
+    border: 3px solid green;
+    padding: 30px 20px;
+    border-radius:10px ;
+    -webkit-border-radius:10px ;
+    -moz-border-radius:10px ;
+    -ms-border-radius:10px ;
+    -o-border-radius:10px ;
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffff,3px 3px 5px #ceced1;
+}
+
+@media(max-width:600px){
+     
+    .codes{
+        display: block;
+    }
+}
+p{
+    font-family: 'Roboto', sans-serif; 
+}
+.function{
+    margin-right: 5px;
+    border: 1px solid black;
+    padding: 20px 20px;
+}
+.code{
+    border: 1px solid black;
+    padding: 20px 20px; 
+}
+
+
+.copy{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.copy:hover{
+    cursor: pointer;
+}
+
+.searchBox{
+    position: relative;
+    padding: 10px 40px ;
+    background: #E5E7EB;
+}
+#search{
+    width: 100%;
+    background: #E5E7EB;
+    height: 90px;
+    padding: 5px 50px;
+    font-size: 29px;
+    
+}
+#search:focus{
+border: none;
+outline: none;
+}
+
+.searchIcon{
+ position: absolute;
+ top: 40px;
+ font-size: 30px;
+}
+#toastBtn{
+    position: fixed;
+    top: 50px;
+    right: 30px;
+    display: none;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    width: 10rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.is-hidden { display: none; }
+
+@keyframes animateToast{
+ 0%{
+   transform: rotate(60deg);
+   -webkit-transform: rotate(60deg);
+   -moz-transform: rotate(60deg);
+   -ms-transform: rotate(60deg);
+   -o-transform: rotate(60deg);
+}
+ 40%{
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+ 60%{
+    transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+}
+ 100%{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+
+}
+
+@media(max-width:600px){
+    #toastBtn{
+        position: fixed;
+        top: 200px;
+        right: 10px;
+    }  
+    
+}
+
+.tipContainer{
+    display: grid;
+    place-items: center;
+    
+    margin: 50px 3px;
+    
+    
+}
+.tipBox{
+    border: 3px solid saddlebrown;
+    width: 80%;
+    padding: 40px 10px;
+    text-align: center;
+    border-radius: 10px;
+   
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.tipBox p,b{
+    line-height: 30px;
+}
+.tip{
+    color: #1E293B;
+    font-weight: 900;
+}
+

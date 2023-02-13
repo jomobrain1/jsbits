@@ -1,0 +1,214 @@
+[
+    
+    {  
+      
+    "id": 1,
+    "title": "Initialising a new git repo",
+    "title_comment":"",
+    "code":"git init" 
+    },
+    {  
+    "id": 2,
+    "title": "Add a single file to staging area",
+    "title_comment":"",
+    "code":"git add index.html" 
+    },
+    {"id": 3,
+     "title": "Add  all files to staging area",
+     "title_comment":"",
+     "code":"git add . " 
+    }
+    ,
+    {"id": 4,
+    "title": "Viewing the  commit history",
+    "title_comment":"",
+    "code":"git log  " 
+    },
+    {"id": 5,
+    "title": "Viewing the  commit history, one commit per line",
+    "title_comment":"",
+    "code":"git log --oneline  " 
+    },
+    {"id": 6,
+    "title": "Checking files in staging area/current branch you are in",
+    "title_comment":"",
+    "code":"git status " 
+    },
+    {
+      "id":7,
+      "title":"Checking  out into a specific commit/See how the code was at that commit ",
+      "title_comment":"",
+      "code":"git checkout [commit-id] ",
+      "process":[
+        
+          "git log --online",
+          "git checkout [commit-id] ",    
+           "git checkout master",
+           "press enter"
+
+      ]
+       
+    },
+    {
+      "id":8,
+      "title":"Going back to a specic commit i.e others are deleted/Dangerous ",
+      "title_comment":"",
+      "code":"git reset [commit id] --hard",
+      "process":[
+              
+           
+        "git log --online",
+        "git reset [commit-id] --hard "       
+        
+       
+      ]
+       
+    },
+
+    {
+      "id":9,
+      "title":"Going back to a specic commit i.e others are NOT deleted/not Dangerous ",
+    
+      "title_comment":"",
+      "code":"git revert [commit id]  "
+      ,
+      "process":[
+              
+      "git log --online",
+      "git revert [commit-id] ",       
+      "type :wq",
+      "press enter"
+        
+       
+      ]
+       
+    },
+    {"id":10,
+    "title": "branch list",
+    "title_comment":"",
+    "code":"git branch --list " 
+    },
+    {"id":11,
+    "title": "make a new branch",
+    "title_comment":"",
+    "code":"git branch branch-name " 
+    },
+    {"id":12,
+    "title": "switch to a brancH",
+    "title_comment":"",
+    "code":"git checkout branch-ame" 
+    },
+    {"id":13,
+    "title": "delete branch ",
+    "title_comment":"ensure you in master branch",
+    "code":"git branch -D branch-name" ,
+    "code_comment":"used b4 merging branches"
+    },
+    {"id":14,
+    "title": "create branch and enter the branch ",
+    "title_comment":"",
+    "code":"git checkout -b branch-name" ,
+    "code_comment":""
+    },
+    {"id":15,
+    "title": "merge a branch into the master branch ",
+    "title_comment":"ensure you are in the master branch",
+    "code":"git merge branch-name" ,
+    "code_comment":""
+    },
+    {"id":16,
+    "title": "push code to a remote repo ",
+    "title_comment":"",
+    "code":"git push [remote_repo_url] [branch name e.g master]" ,
+    "code_comment":""
+    },
+    {"id":17,
+    "title": "change the url of an existing remote repository",
+    "title_comment":"",
+    "code":"git remote set-url origin git@github.com:User/UserRepo.git" ,
+    "code_comment":""
+    },
+    {"id":18,
+    "title": "push code to a remote repo after making a change",
+    "title_comment":"",
+    "code":"git push origin [master(branch name)]" ,
+    "code_comment":""
+    },
+    {"id":19,
+    "title": "clone a remote repo",
+    "title_comment":"",
+    "code":"git clone [remote_url]" ,
+    "code_comment":""
+    },
+    {"id":19,
+    "title": "check which remote repo you in",
+    "title_comment":"",
+    "code":"git remote -v" ,
+    "code_comment":""
+    },
+    {"id":20,
+    "title": "Pull code from connected remote repo",
+    "title_comment":"ensures code in local and remote repo are up to date",
+    "code":"git pull origin master" ,
+    "code_comment":""
+    },
+    {"id":21,
+    "title": "Pushing a specific none-main branch",
+    "title_comment":"ensures you in the branch and the code is staged and commited",
+    "code":"git push origin [none-main-branch-name]" ,
+    "code_comment":""
+    },
+    {"id":22,
+    "title": "add a new remote-url",
+    "title_comment":"",
+    "code":"git remote add origin git@github.com:User/UserRepo.git" ,
+    "code_comment":""
+    },
+    {"id":23,
+    "title": "Rename the current",
+    "title_comment":"",
+    "code":"git branch -m [new-branch-name]" ,
+    "code_comment":""
+    },
+    {"id":24,
+    "title": "check unstaged files",
+    "title_comment":"",
+    "code":"git diff" ,
+    "code_comment":""
+    }
+    ,
+    {"id":25,
+    "title": "configure email",
+    "title_comment":"",
+    "code":"git config --global user.name [ur name]" ,
+    "code_comment":""
+    },
+    {"id":26,
+    "title": "configure email",
+    "title_comment":"",
+    "code":"git config --global user.email [ur email]" ,
+    "code_comment":""
+    },
+    {"id":27,
+    "title": "merge a specific branch to the current branch",
+    "title_comment":"",
+    "code":"git merge [branch-name]" ,
+    "code_comment":""
+    },
+    {"id":28,
+    "title": "Download the content from s remote repo",
+    "title_comment":"",
+    "code":"git pull [remote]" ,
+    "code_comment":""
+    },
+    {"id":29,
+    "title": "Forcefully push changes if you dont wanna pull changes from remote to local",
+    "title_comment":"",
+    "code":"git checkout master; git push -f" ,
+    "code_comment":""
+    }
+   
+    
+    
+
+]

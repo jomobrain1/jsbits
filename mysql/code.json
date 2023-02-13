@@ -1,0 +1,221 @@
+[
+    
+    {  
+      
+    "id": 1,
+    "title": "entering into mysql mode with root user",
+    "title_comment":"",
+    "code":"MYSQL -U root -p" 
+    },
+
+    {  
+        "id": 2,
+        "title": "show database",
+        "title_comment":"",
+        "code":"SHOW DATABASES;" 
+    },
+    {  
+        "id": 2.1,
+        "title": "show table",
+        "title_comment":"",
+        "code":"SHOW tables;" 
+    },
+    {  
+      
+        "id": 3,
+        "title": "SELECT @@hostname",
+        "title_comment":"",
+        "code":"Returns the hostname" 
+    },
+    {  
+      
+        "id": 4,
+        "title": "use a database",
+        "title_comment":"",
+        "code":"use databasename;" 
+    },
+    {  
+      
+        "id": 5,
+        "title": "DELETE a database ",
+        "title_comment":"",
+        "code":"DROP DATABASE [name]" 
+    },
+    {  
+      
+        "id": 6,
+        "title": "Shows the database currently in use ",
+        "title_comment":"",
+        "code":"SELECT database()" 
+    },
+    {        
+        "id": 7,
+        "title": "Describes a table",
+        "title_comment":"",
+        "code":"DESC [tablename] // Show columns from [tablename]" 
+    },
+    
+     {        
+        "id": 8,
+        "title": "Create a table",
+        "title_comment":"",
+        "code":"create table [tablename]( <br> id int auto_increment,<br>  name varchar(100) not null, <br>  owner varchar(100), <br> dob Datetime,<br> primary key(id) <br> );   " 
+    },
+    {        
+        "id": 9,
+        "title": "Delete a table",
+        "title_comment":"",
+        "code":"DROP TABLE [tablename]" 
+    },
+    {        
+        "id": 10,
+        "title": "Create a sample table",
+        "title_comment":"",
+        "code":"create table pastries(name varchar(100), quantity int);" 
+    },
+    {        
+        "id": 11,
+        "title": "insert data into a table",
+        "title_comment":"",
+        "code":"create table pastries(name varchar(100), quantity int);" 
+    },
+   
+    
+    {        
+        "id": 12,
+        "title": "insert data into a table",
+        "title_comment":"",
+        "code":" insert into [tablename](name,owner,dob) <br><br> values('jomo','beast',10/12/2020), <br><br>('ray','mondy',10/11/2022);" 
+    },
+    {        
+        "id": 13,
+        "title": "Current Time",
+        "title_comment":"",
+        "code":"now()" 
+    },
+    {        
+        "id": 14,
+        "title": "show warnings",
+        "title_comment":"",
+        "code":"show warnings" 
+    }
+    ,
+    {        
+        "id": 14,
+        "title": "create table with default value",
+        "title_comment":"",
+        "code":"create table students(<br><br>name varchar(100) not null default 'kenyanstudent', <br><br> age int default 19 );" 
+    },
+    {        
+        "id": 15,
+        "title": "select a specific item",
+        "title_comment":"",
+        "code":"Select * from students WHERE name='jomo' " 
+    },
+    {        
+        "id": 16,
+        "title": "returns rows where name =owner",
+        "title_comment":"",
+        "code":"select name, owner from details where name=owner " 
+    },
+    {        
+        "id": 17,
+        "title": "in the response column name appears as name_of_students",
+        "title_comment":"",
+        "code":"SELECT name AS name_of_students ,owner from details; " 
+    },
+    {        
+        "id": 18,
+        "title": "updating stuff",
+        "title_comment":"",
+        "code":"update tableName set name='raymond' where owner='beast'; " 
+    },
+    {        
+        "id": 19,
+        "title": "Deleting stuff",
+        "title_comment":"",
+        "code":"DELETE from users(<u style='color:white;'>this is the table name</u>) where name='grace'; " 
+    },
+    {        
+        "id": 20,
+        "title": "Deletes everything in the table",
+        "title_comment":"",
+        "code":"<u style='color:white;'>DELETE FROM users</u>; " 
+    },
+    {        
+        "id": 21,
+        "title": "Select with a certain order",
+        "title_comment":"",
+        "code":"select * from shirts order by age asc; " 
+    },
+    {        
+        "id": 22,
+        "title": "Concat column_names from a table",
+        "title_comment":"",
+        "code":"<h1>SELECT</h1> concat (name,'---',owner) from details;; " 
+    },
+    {        
+        "id": 23,
+        "title": "Concat column_names from a table using AS",
+        "title_comment":"",
+        "code":"<h1>SELECT</h1> owner AS Boss concat (name,'---',owner) from details AS full_name; " 
+    },
+    {        
+        "id": 24,
+        "title": "Concat with a separator",
+        "title_comment":"",
+        "code":"<h1>SELECT</h1> concat_ws ('-',name,job,age) from users; " 
+    },
+    {        
+        "id": 25,
+        "title": "Substring",
+        "title_comment":"",
+        "code":"SELECT SUBSTRING('helo world' ,1,4)" 
+    },
+    {        
+        "id": 26,
+        "title": "Substring",
+        "title_comment":"",
+        "code":"SELECT SUBSTRING(name ,1,4) from students;" 
+    },
+    {        
+        "id": 27,
+        "title": "concat and substring",
+        "title_comment":"",
+        "code":" SELECT Concat(Substring(name,1,5),'...') AS 'short_title from students ';" 
+    },
+    {        
+        "id": 28,
+        "title": "REVERSE",
+        "title_comment":"",
+        "code":"  SELECT reverse('hellojomoBrain'); ';" 
+    },
+    {        
+        "id": 29,
+        "title": "Get Character length",
+        "title_comment":"",
+        "code":"   select char_length(name) from [tablename] ;" 
+    },
+    {        
+        "id": 30,
+        "title": "Get uppercase",
+        "title_comment":"",
+        "code":"select upper(name) from details;;" 
+    }
+    
+  
+   
+
+   
+    
+    
+
+    
+
+
+    
+   
+    
+    
+
+]

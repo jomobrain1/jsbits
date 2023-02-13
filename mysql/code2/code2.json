@@ -1,0 +1,76 @@
+[
+
+       {  
+      
+        "id": 1,
+        "title": "concats and returns in upperCase",
+        "title_comment":"",
+        "code":"select concat(upper(name),' ', upper(owner)) from [tablename];" 
+        },
+        {  
+      
+          "id": 2,
+          "title": "select distinct",
+          "title_comment":"",
+          "code":"select distinct author_name from books[tableName]" 
+          },
+          {  
+      
+            "id": 3,
+            "title": "select distinct",
+            "title_comment":"",
+            "code":"select distinct concat(firstname,lastname) from books[tableName]" 
+            },
+            {  
+      
+              "id": 4,
+              "title": "order BY",
+              "title_comment":"desc can be removed",
+              "code":"select author_lname from books order by author_lname desc" 
+              }
+        ,
+        {  
+      
+          "id": 5,
+          "title": "order BY with limit",
+          "title_comment":"",
+          "code":"select author_lname from books order by author_lname desc limit 5" 
+          },
+          {  
+      
+          "id": 6,
+          "title": "LImit",
+          "title_comment":"1,5 =(startindex,lastindex)",
+          "code":"select author_lname from books order by author_lname desc limit 1,5" 
+          },
+          {  
+      
+            "id": 7,
+            "title": "SEARCH",
+            "title_comment":" '% backslash% %' bs is used as escape character when % is used inside",
+            "code":"select author_lname from books where author_name like '%jomobrain%' " 
+            },
+            {  
+      
+              "id": 8,
+              "title": "Count",
+              "title_comment":"",
+              "code":"select  count(*) from books; " 
+              },
+              {  
+      
+                "id": 8,
+                "title": "Count",
+                "title_comment":"",
+                "code":"select count( distinct author_name) from books; " 
+                },
+                {  
+      
+                  "id": 9,
+                  "title": "Home many titles contain the?????",
+                  "title_comment":"",
+                  "code":"select count(*) from books where title like '%the%'; " 
+                  }
+             
+         
+]
